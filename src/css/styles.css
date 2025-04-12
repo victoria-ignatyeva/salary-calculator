@@ -45,6 +45,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "SF Pro Display", sans-serif;
   color: var(--dark);
@@ -99,11 +104,10 @@ a {
 /* Стили для hero */
 
 .hero__container {
-  height: 100vh; /* Полная высота окна */
+  height: 100vh;
   background-image: url(../images/hero-background.png);
   background-repeat: no-repeat;
-  background-size: 100% auto; /* Масштабирование изображения по ширине, высота регулируется автоматически */
-  background-position: center; /* Центрирует изображение */
+  background-size: 100% auto;
   padding-top: 80px;
   overflow: hidden;
 }
@@ -177,7 +181,7 @@ a {
 
 .how-it-works__step-list {
   display: flex;
-  gap: 92;
+  gap: 92px;
   justify-content: space-between;
   margin-bottom: 140px;
 }
