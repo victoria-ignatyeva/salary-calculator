@@ -897,4 +897,8 @@ input {
   .hero__text {
     margin-bottom: 12px;
   }
+  .header__logo-image {
+    max-width: 150px;
+    height: 33px;
+  }
 }
