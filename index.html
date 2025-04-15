@@ -6,7 +6,7 @@
     <title>Salary Calculator</title>
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/styles.css" />
-    <script src="src/js/script.js" defer></script>
+    <script src="src/js/index.js" defer></script>
   </head>
   <body>
     <header class="header container">
@@ -19,7 +19,7 @@
           />
         </a>
         <button class="header__menu-btn">
-          <img src="src/images/menu-btn.svg" alt="menu-btn" />
+          <img src="src/images/menu-icon.svg" class="menu-icon" />
         </button>
         <nav class="header__menu">
           <ul class="header__menu-list">
@@ -36,6 +36,7 @@
               <a href="" class="header__menu-link">О компании</a>
             </li>
           </ul>
+          <div class="menu-title">Salary Calculator</div>
         </nav>
       </div>
     </header>
@@ -54,84 +55,18 @@
         </div>
       </section>
 
-      <!-- <section class="audience container">
-        <div class="audience__card audience__card--abiturient">
-          <h3 class="audience__section-tag">Абитуриентам</h3>
-          <p class="audience__description">
-            Чтобы выбрать профессию не «на глаз», а с четким пониманием будущего
-            дохода
-          </p>
-        </div>
+      <section class="audience container"></section>
 
-        <div class="audience__card audience__card--student">
-          <h3 class="audience__title">Студентам</h3>
-          <p class="audience-description">
-            Сравнить зарплаты в разных сферах и прокачать самые денежные навыки
-          </p>
-        </div>
-        <div class="audience__card audience__card--specialist">
-          <h3 class="audience__title">Специалистам</h3>
-          <p class="audience__description">
-            Узнать свою рыночную цену и не продешевить на собеседовании
-          </p>
-        </div>
-        <div class="audience__card audience__card--hr">
-          <h3 class="audience__title">HR-ам</h3>
-          <p class="audience__description">
-            Быстро проверять, насколько предложение компании соответствует рынку
-          </p>
-        </div>
-        <div class="audience__card audience__card--everyone">
-          <h3 class="audience__title">Всем желающим</h3>
-          <p class="audience__description">
-            Принимать карьерные решения не по слухам, а по цифрам
-          </p>
-        </div>
-      </section>
-
-      <section class="about container">
-        <h2 class="about__section-tag">[01] О проекте</h2>
-
-        <div class="about__content">
-          <p class="about__text">
-            Мы обучили модели на тысячах вакансий, чтобы вы могли получить
-            точный расчёт за несколько секунд.
-          </p>
-          <p class="about__text about__text--small">
-            Сервис анализирует актуальные данные по рынку труда и помогает:
-          </p>
-        </div>
-
-        <div class="about__box about__box--first">
-          <div class="about__number--circle">1</div>
-          <p class="about__box-text">
-            Понять, как навыки и технологии влияют на оплату труда
-          </p>
-        </div>
-
-        <div class="about__box about__box--second">
-          <div class="about__number--circle">2</div>
-          <p class="about__box-text">
-            Сравнить доходы по городам и уровням опыта
-          </p>
-        </div>
-
-        <div class="about__box about__box--third">
-          <div class="about__number--circle">3</div>
-          <p class="about__box-text">
-            Узнать медианные зарплаты для вашей специализации
-          </p>
-        </div>
-      </section> -->
+      <section class="about container"></section>
 
       <section class="how-it-works container">
         <div class="how-it-works__description">
           <p class="how-it-works__text">
             Чтобы получить актуальные данные по вашему профилю, достаточно
-            заполнить
+            заполнить &nbsp;
             <span class="how-it-works__accent">5 пунктов</span>:
           </p>
-          <h2 class="how-it-works__tag">Как это работает?</h2>
+          <h2 class="how-it-works__section-tag">Как это работает?</h2>
         </div>
 
         <ul class="how-it-works__step-list">
@@ -186,40 +121,48 @@
 
         <div class="how-it-works__cards">
           <div class="how-it-works__card">
-            <p class="how-it-works__card-title">Минимальная зарплата</p>
-            <p class="how-it-works__card-description">
-              Нижняя граница по вашим параметрам
-            </p>
+            <div class="how-it-works__card-text">
+              <p class="how-it-works__card-title">Минимальная зарплата</p>
+              <p class="how-it-works__card-description">
+                Нижняя граница по вашим параметрам
+              </p>
+            </div>
             <div class="how-it-works__value-box">
               <span class="how-it-works__value">77 145</span>
               <span class="how-it-works__currency">руб.</span>
             </div>
           </div>
           <div class="how-it-works__card">
-            <p class="how-it-works__card-title">Максимальная зарплата</p>
-            <p class="how-it-works__card-description">
-              Топовые предложения в вашей нише
-            </p>
+            <div class="how-it-works__card-text">
+              <p class="how-it-works__card-title">Максимальная зарплата</p>
+              <p class="how-it-works__card-description">
+                Топовые предложения в вашей нише
+              </p>
+            </div>
             <div class="how-it-works__value-box">
               <span class="how-it-works__value">103 115</span>
               <span class="how-it-works__currency">руб.</span>
             </div>
           </div>
           <div class="how-it-works__card">
-            <p class="how-it-works__card-title">Средняя зарплата</p>
-            <p class="how-it-works__card-description">
-              Рыночный стандарт для вашего опыта
-            </p>
+            <div class="how-it-works__card-text">
+              <p class="how-it-works__card-title">Средняя зарплата</p>
+              <p class="how-it-works__card-description">
+                Рыночный стандарт для вашего опыта
+              </p>
+            </div>
             <div class="how-it-works__value-box">
               <span class="how-it-works__value">91 857</span>
               <span class="how-it-works__currency">руб.</span>
             </div>
           </div>
           <div class="how-it-works__card">
-            <p class="how-it-works__card-title">Медианная зарплата</p>
-            <p class="how-it-works__card-description">
-              «Золотая середина» без крайних значений
-            </p>
+            <div class="how-it-works__card-text">
+              <p class="how-it-works__card-title">Медианная зарплата</p>
+              <p class="how-it-works__card-description">
+                «Золотая середина» без крайних значений
+              </p>
+            </div>
             <div class="how-it-works__value-box">
               <span class="how-it-works__value">83 584</span>
               <span class="how-it-works__currency">руб.</span>
@@ -433,7 +376,7 @@
 
       <section class="team container" id="team">
         <div class="team__header">
-          <h2 class="team__title">[03] Команда проекта</h2>
+          <h2 class="team__section-tag">[03] Команда проекта</h2>
           <p class="team__text">
             Над калькулятором работали студенты <br />
             НИУ ВШЭ и IT-академия Lad
@@ -513,20 +456,31 @@
 
       <section class="company container">
         <div class="company__title">
-          <div class="company__section-tag">[04] О компании</div>
-          <a href="https://lad-academy.ru/main" class="company__logo">
-            <img src="src/images/lad-academy-logo.png" alt="LAD acedemy logo" />
-          </a>
-        </div>
-        <div class="company__text">
+          <h2 class="company__section-tag">[04] О компании</h2>
           <p class="company__credit">
             Этот проект стал возможным только благодаря
-            <a href="https://lad-academy.ru/main" class="company__link-accent"
-              >IT-академии Lad</a
+            <a href="https://lad-academy.ru/main" class="company__link-accent">
+              IT-академии Lad</a
             >
             — места, где обучают IT с нуля и пошагово доводят до
             трудоустройства.
           </p>
+        </div>
+        <div class="company__text">
+          <a href="/" class="company__logo">
+            <picture>
+              <!-- Для экранов меньше 1700px -->
+              <source
+                srcset="src/images/lad-academy-logo-big.png"
+                media="(max-width: 1699px)"
+              />
+              <!-- Для экранов 1700px и больше -->
+              <img
+                src="src/images/lad-academy-logo.png"
+                alt="Логотип lad-academy"
+              />
+            </picture>
+          </a>
           <p class="company__description">
             Академия не просто обучает, а даёт студентам возможность работать с
             реальными коммерческими задачами. Наш калькулятор зарплат — один из
@@ -536,7 +490,7 @@
         </div>
       </section>
     </main>
-    <div class="footer">
+    <footer class="footer">
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
@@ -554,6 +508,6 @@
         </ul>
       </nav>
       <div class="footer__title">Salary Calculator</div>
-    </div>
+    </footer>
   </body>
 </html>
