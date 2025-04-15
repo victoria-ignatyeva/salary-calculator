@@ -1273,6 +1273,9 @@ input {
     padding-top: 60px;
     border-radius: 16px;
   }
+  .company__logo {
+    padding: 24px 31px;
+  }
 }
 
 @media (max-width: 500px) {
