@@ -964,7 +964,6 @@ input {
     flex-direction: column;
     margin-left: 60px;
     margin-bottom: 319px;
-    gap: 40px;
   }
   .header__menu-link {
     color: white;
@@ -1157,12 +1156,12 @@ input {
     content: url("../images/lad-academy-logo.png");
   }
   .footer {
-    padding: 60px 32px 20px;
     border-radius: 24px;
+    padding: 60px 0 24px 0;
   }
   .footer__menu-list,
   .header__menu-list {
-    margin-left: 0;
+    margin-left: 60px;
     margin-bottom: 100px;
   }
   .footer__menu-link,
