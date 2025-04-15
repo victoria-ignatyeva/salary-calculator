@@ -212,7 +212,6 @@ a {
   gap: 92px;
   justify-content: center;
   margin-bottom: 140px;
-  flex-wrap: wrap;
 }
 
 .how-it-works__step {
@@ -220,6 +219,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  line-height: 1.2;
 }
 
 .how-it-works__step-number {
@@ -234,6 +234,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.how-it-works__step-content {
+  width: 280px;
 }
 
 .how-it-works__step-title {
