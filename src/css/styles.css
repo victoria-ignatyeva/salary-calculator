@@ -1051,7 +1051,7 @@ input {
   .calculator {
     padding: 20px;
     padding-bottom: 60px;
-    border-radius: 24px;
+    border-radius: 14px;
   }
   .calculator__header {
     margin-bottom: 36px;
@@ -1076,7 +1076,7 @@ input {
     grid-template-columns: 1fr;
     padding: 14px 12px;
     gap: 24px;
-    border-radius: 4px;
+    border-radius: 20px;
   }
   .calculator__skills {
     grid-column: span 1;
@@ -1088,10 +1088,17 @@ input {
   .output-box {
     font-size: 22px;
     padding: 8px 47.5px;
+    line-height: 1.18;
   }
   .calculator__salary-range {
     padding: 16px;
     grid-column: span 1;
+    border-radius: 20px;
+  }
+  .calculator__avg-salary,
+  .calculator__median-salary {
+    border-radius: 20px;
+    padding: 16px;
   }
   .calculator__salary-range-values {
     flex-direction: column;
@@ -1133,6 +1140,7 @@ input {
     min-width: 135px;
     min-height: 170px;
     max-width: 100%;
+    border-radius: 14px;
   }
   .team {
     display: grid;
@@ -1156,7 +1164,7 @@ input {
     content: url("../images/lad-academy-logo.png");
   }
   .footer {
-    border-radius: 24px;
+    border-radius: 14px;
     padding: 60px 0 24px 0;
   }
   .footer__menu-list,
@@ -1184,7 +1192,7 @@ input {
     width: calc(100% - 40px);
     background-color: var(--dark);
     padding-top: 60px;
-    border-radius: 16px;
+    border-radius: 14px;
   }
   .company__logo {
     padding: 24px 31px;
