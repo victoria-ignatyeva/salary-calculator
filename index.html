@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,505 +9,699 @@
     <script src="src/js/index.js" defer></script>
   </head>
   <body>
-    <header class="header container">
-      <div class="header__inner">
-        <a href="/" class="header__logo" aria-label="Home" title="Home">
-          <img
-            src="src/images/logo.svg"
-            class="header__logo-image"
-            alt="logo"
-          />
-        </a>
-        <button class="header__menu-btn">
-          <img src="src/images/menu-icon.svg" class="menu-icon" />
-        </button>
-        <nav class="header__menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a href="" class="header__menu-link">О проекте</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#calculator" class="header__menu-link">Калькулятор</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#team" class="header__menu-link">Команда</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="" class="header__menu-link">О компании</a>
-            </li>
-          </ul>
-          <div class="menu-title">Salary Calculator</div>
-        </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo" aria-label="Home" title="Home">
+            <img
+              src="src/images/logo.svg"
+              class="header__logo-image"
+              alt="logo"
+            />
+          </a>
+          <button class="header__menu-btn">
+            <img src="src/images/menu-icon.svg" class="menu-icon" />
+          </button>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#info" class="header__menu-link">О проекте</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#calculator" class="header__menu-link">Калькулятор</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#team" class="header__menu-link">Команда</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#company" class="header__menu-link">О компании</a>
+              </li>
+            </ul>
+            <div class="menu-title">Salary Calculator</div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
-      <section class="hero container">
-        <div class="hero__body">
-          <h1 class="hero__title">
-            <span class="hero__text-accent">Salary Calculator</span> —
-            калькулятор зарплат в сфере информационных технологий
-          </h1>
-          <p class="hero__text">
-            Точный расчёт на основе данных. <br />
-            Узнайте, сколько стоит ваш опыт на рынке труда
-          </p>
-          <a href="#calculator" class="hero__button">Попробовать бесплатно</a>
-        </div>
-      </section>
-
-      <section class="audience container"></section>
-
-      <section class="about container"></section>
-
-      <section class="how-it-works container">
-        <div class="how-it-works__description">
-          <p class="how-it-works__text">
-            Чтобы получить актуальные данные по вашему профилю, достаточно
-            заполнить &nbsp;
-            <span class="how-it-works__accent">5 пунктов</span>:
-          </p>
-          <h2 class="how-it-works__section-tag">Как это работает?</h2>
-        </div>
-
-        <ul class="how-it-works__step-list">
-          <li class="how-it-works__step">
-            <span class="how-it-works__step-number">1</span>
-            <div class="how-it-works__step-content">
-              <p class="how-it-works__step-title">Специальность</p>
-              <p class="how-it-works__step-description">
-                Ваша профессия или должность
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__body">
+              <h1 class="hero__title">
+                <span class="hero__text-accent">Salary Calculator</span> —
+                калькулятор зарплат в сфере информационных технологий
+              </h1>
+              <p class="hero__text">
+                Точный расчёт на основе данных. <br />
+                Узнайте, сколько стоит ваш опыт на рынке труда
               </p>
-            </div>
-          </li>
-          <li class="how-it-works__step">
-            <span class="how-it-works__step-number">2</span>
-            <div class="how-it-works__step-content">
-              <p class="how-it-works__step-title">Опыт работы</p>
-              <p class="how-it-works__step-description">От 0 до 6 и выше</p>
-            </div>
-          </li>
-          <li class="how-it-works__step">
-            <span class="how-it-works__step-number">3</span>
-            <div class="how-it-works__step-content">
-              <p class="how-it-works__step-title">Город</p>
-              <p class="how-it-works__step-description">
-                Зарплаты сильно зависят от локации
-              </p>
-            </div>
-          </li>
-          <li class="how-it-works__step">
-            <span class="how-it-works__step-number">4</span>
-            <div class="how-it-works__step-content">
-              <p class="how-it-works__step-title">Тип занятости</p>
-              <p class="how-it-works__step-description">
-                Гибкий график, полный день, удалённая работа
-              </p>
-            </div>
-          </li>
-          <li class="how-it-works__step">
-            <span class="how-it-works__step-number">5</span>
-            <div class="how-it-works__step-content">
-              <p class="how-it-works__step-title">Навыки</p>
-              <p class="how-it-works__step-description">
-                Чем больше навыков — тем точнее расчёт
-              </p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="how-it-works__result-title">
-          После заполнения всех полей вы получите данные:
-        </div>
-
-        <div class="how-it-works__cards">
-          <div class="how-it-works__card">
-            <div class="how-it-works__card-text">
-              <p class="how-it-works__card-title">Минимальная зарплата</p>
-              <p class="how-it-works__card-description">
-                Нижняя граница по вашим параметрам
-              </p>
-            </div>
-            <div class="how-it-works__value-box">
-              <span class="how-it-works__value">77 145</span>
-              <span class="how-it-works__currency">руб.</span>
-            </div>
-          </div>
-          <div class="how-it-works__card">
-            <div class="how-it-works__card-text">
-              <p class="how-it-works__card-title">Максимальная зарплата</p>
-              <p class="how-it-works__card-description">
-                Топовые предложения в вашей нише
-              </p>
-            </div>
-            <div class="how-it-works__value-box">
-              <span class="how-it-works__value">103 115</span>
-              <span class="how-it-works__currency">руб.</span>
-            </div>
-          </div>
-          <div class="how-it-works__card">
-            <div class="how-it-works__card-text">
-              <p class="how-it-works__card-title">Средняя зарплата</p>
-              <p class="how-it-works__card-description">
-                Рыночный стандарт для вашего опыта
-              </p>
-            </div>
-            <div class="how-it-works__value-box">
-              <span class="how-it-works__value">91 857</span>
-              <span class="how-it-works__currency">руб.</span>
-            </div>
-          </div>
-          <div class="how-it-works__card">
-            <div class="how-it-works__card-text">
-              <p class="how-it-works__card-title">Медианная зарплата</p>
-              <p class="how-it-works__card-description">
-                «Золотая середина» без крайних значений
-              </p>
-            </div>
-            <div class="how-it-works__value-box">
-              <span class="how-it-works__value">83 584</span>
-              <span class="how-it-works__currency">руб.</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="calculator container" id="calculator">
-        <div class="calculator__header">
-          <h2 class="calculator__title">Salary Calculator</h2>
-          <p class="calculator__text">
-            Узнайте диапазон зарплат для вашей специальности, <br />
-            учитывая навыки, опыт и место работы
-          </p>
-        </div>
-
-        <div class="calculator__body">
-          <div class="calculator__input">
-            <h3 class="calculator__subtitle">Ввод данных</h3>
-            <form action="" class="calculator__form">
-              <!-- Специальность -->
-              <div class="calculator__vacancy">
-                <label for="vacancy" class="calculator__label"
-                  >Специальность</label
-                >
-                <div
-                  class="calculator__input-wrapper calculator__input--wrapper"
-                >
-                  <input
-                    id="vacancy"
-                    class="calculator__input"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                  <button
-                    type="button"
-                    class="calculator__arrow-button"
-                    id="open-dropdown"
-                  >
-                    <img
-                      src="src/images/arrow-down.svg"
-                      alt="Arrow Down"
-                      class="calculator__arrow-img"
-                    />
-                  </button>
-                  <div id="vacancy-dropdown" class="calculator__dropdown"></div>
-                </div>
-              </div>
-
-              <!-- Город -->
-              <div class="calculator__city">
-                <label for="city" class="calculator__label">Город</label>
-                <div
-                  class="calculator__input-wrapper calculator__input--wrapper"
-                >
-                  <input
-                    id="city"
-                    class="calculator__input"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                  <button
-                    type="button"
-                    class="calculator__arrow-button"
-                    id="open-dropdown-city"
-                  >
-                    <img
-                      src="src/images/arrow-down.svg"
-                      alt="Arrow Down"
-                      class="calculator__arrow-img"
-                    />
-                  </button>
-                  <div id="city-dropdown" class="calculator__dropdown"></div>
-                </div>
-              </div>
-
-              <!-- Опыт работы -->
-              <div class="calculator__experience">
-                <label for="experience" class="calculator__label"
-                  >Опыт работы</label
-                >
-                <div
-                  class="calculator__input-wrapper calculator__input--wrapper"
-                >
-                  <input
-                    id="experience"
-                    class="calculator__input"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                  <button
-                    type="button"
-                    class="calculator__arrow-button"
-                    id="open-dropdown-experience"
-                  >
-                    <img
-                      src="src/images/arrow-down.svg"
-                      alt="Arrow Down"
-                      class="calculator__arrow-img"
-                    />
-                  </button>
-                  <div
-                    id="experience-dropdown"
-                    class="calculator__dropdown"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Тип занятости -->
-              <div class="calculator__schedule">
-                <label for="schedule" class="calculator__label"
-                  >Тип занятости</label
-                >
-                <div
-                  class="calculator__input-wrapper calculator__input--wrapper"
-                >
-                  <input
-                    id="schedule"
-                    class="calculator__input"
-                    placeholder=""
-                    autocomplete="off"
-                  />
-                  <button type="button" class="calculator__arrow-button">
-                    <img
-                      src="src/images/arrow-down.svg"
-                      alt="Arrow Down"
-                      class="calculator__arrow-img"
-                    />
-                  </button>
-                  <div class="calculator__dropdown"></div>
-                </div>
-              </div>
-
-              <!-- Навыки -->
-              <div class="calculator__skills">
-                <div class="calculator__label-wrapper">
-                  <label for="skills" class="calculator__label">Навыки</label>
-                  <button type="button" class="calculator__clear-button">
-                    Очистить
-                  </button>
-                </div>
-                <div
-                  class="calculator__input-wrapper calculator__input--wrapper"
-                >
-                  <input id="skills" class="calculator__input" placeholder="" />
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <!-- Результаты вычислений -->
-          <div class="calculator__result">
-            <h3 class="calculator__subtitle">Результаты вычислений</h3>
-            <div class="calculator__result-wrapper">
-              <!-- Диапазон зарплаты -->
-              <div class="calculator__salary-range">
-                <h4 class="calculator__salary-range-title result-subtitle">
-                  Диапазон зарплаты (от и до)
-                </h4>
-                <div class="calculator__salary-range-values">
-                  <div class="calculator__salary-range-box output-box">
-                    <span class="calculator__salary-from">xx xxx</span>
-                    <span class="calculator__currency">руб.</span>
-                  </div>
-                  <span class="calculator__salary-separator"></span>
-                  <div class="calculator__salary-range-box output-box">
-                    <span class="calculator__salary-to">xx xxx</span>
-                    <span class="calculator__currency">руб.</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Средняя зарплата -->
-              <div class="calculator__avg-salary">
-                <h4 class="calculator__avg-salary-title result-subtitle">
-                  Средняя зарплата
-                </h4>
-                <div class="calculator__avg-salary-box output-box">
-                  <span class="calculator__avg-salary-output">xx xxx</span>
-                  <span class="calculator__currency">руб.</span>
-                </div>
-              </div>
-
-              <!-- Медианная зарплата -->
-              <div class="calculator__median-salary">
-                <h4 class="calculator__median-salary-title result-subtitle">
-                  Медианная зарплата
-                </h4>
-                <div class="calculator__median-salary-box output-box">
-                  <span class="calculator__median-salary-output">xx xxx</span>
-                  <span class="calculator__currency">руб.</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Предупреждение -->
-            <div class="calculator__form-warning">
-              <img
-                class="calculator__warning-icon"
-                src="src/images/exclmark.svg"
-                alt="exclamation mark"
-              />
-              <span class="calculator__warning-text"
-                >Выберите все параметры</span
+              <a href="#calculator" class="hero__button"
+                >Попробовать бесплатно</a
               >
             </div>
           </div>
         </div>
       </section>
 
-      <section class="team container" id="team">
-        <div class="team__header">
-          <h2 class="team__section-tag">[03] Команда проекта</h2>
-          <p class="team__text">
-            Над калькулятором работали студенты <br />
-            НИУ ВШЭ и IT-академия Lad
-          </p>
-        </div>
+      <section class="audience" id="audience">
+        <div class="container">
+          <div class="audience__line d-flex">
+            <div class="audience__card pink-border">
+              <svg
+                class="audience__card-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 80 81"
+                fill="none"
+              >
+                <path
+                  d="M37.0061 3.32608C37.3047 -0.442011 42.6953 -0.442036 42.9939 3.32606L44.7983 26.0971C44.9839 28.4395 47.5641 29.7114 49.469 28.3995L67.9864 15.6461C71.0506 13.5357 74.4116 17.8497 71.7197 20.4381L55.4524 36.0797C53.779 37.6887 54.4162 40.5466 56.606 41.2531L77.8923 48.1209C81.4147 49.2573 80.2152 54.6369 76.5599 54.0964L54.4705 50.8301C52.1982 50.4941 50.4126 52.786 51.2383 54.9789L59.2646 76.2963C60.5927 79.8238 55.736 82.218 53.8698 78.9556L42.592 59.2411C41.4319 57.213 38.5681 57.213 37.408 59.2411L26.1302 78.9556C24.264 82.2179 19.4073 79.8238 20.7354 76.2963L28.7617 54.9789C29.5874 52.786 27.8018 50.4941 25.5295 50.8301L3.4401 54.0964C-0.215206 54.6369 -1.41474 49.2573 2.10767 48.1209L23.394 41.2531C25.5837 40.5466 26.221 37.6887 24.5476 36.0797L8.28032 20.4381C5.58845 17.8497 8.9494 13.5357 12.0136 15.6461L30.531 28.3995C32.4359 29.7114 35.0161 28.4395 35.2017 26.0971L37.0061 3.32608Z"
+                  fill="#F8D6FA"
+                />
+              </svg>
+              <div class="audience__text">
+                <h4 class="audience__title">Абитуриентам</h4>
+                <p class="audience__description">
+                  Чтобы выбрать профессию не «на глаз», а с четким пониманием
+                  будущего дохода
+                </p>
+              </div>
+            </div>
 
-        <div class="team__card system-alanyst">
-          <div class="team__card-text">
-            <h6 class="team__role">System Analyst</h6>
-            <div class="team__name">Спаращуков Кирилл</div>
+            <div class="audience__card green-border">
+              <svg
+                class="audience__card-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 80 81"
+                fill="none"
+              >
+                <path
+                  d="M39.0447 1.29446C39.1958 0.235179 40.8042 0.23518 40.9553 1.29446L44.3484 25.0797C44.4571 25.8415 45.4421 26.1463 46.0003 25.5908L63.4268 8.24735C64.2029 7.47496 65.5041 8.37519 64.9725 9.31675L53.0361 30.4586C52.6538 31.1358 53.2626 31.9337 54.057 31.7967L78.8607 27.5197C79.9654 27.3292 80.4624 28.7858 79.4511 29.25L56.7445 39.673C56.0173 40.0069 56.0173 40.9931 56.7445 41.327L79.4511 51.75C80.4624 52.2142 79.9654 53.6708 78.8607 53.4803L54.057 49.2033C53.2626 49.0663 52.6538 49.8642 53.0361 50.5414L64.9725 71.6833C65.5041 72.6248 64.2029 73.525 63.4268 72.7526L46.0003 55.4092C45.4421 54.8537 44.4571 55.1585 44.3484 55.9203L40.9553 79.7055C40.8042 80.7648 39.1958 80.7648 39.0447 79.7055L35.6516 55.9203C35.5429 55.1585 34.5579 54.8537 33.9997 55.4092L16.5732 72.7526C15.7971 73.525 14.4959 72.6248 15.0275 71.6833L26.9639 50.5414C27.3462 49.8642 26.7374 49.0663 25.943 49.2033L1.13928 53.4803C0.0346378 53.6708 -0.462363 52.2142 0.548881 51.75L23.2555 41.327C23.9827 40.9931 23.9827 40.0069 23.2555 39.673L0.548878 29.25C-0.462366 28.7858 0.0346429 27.3292 1.13928 27.5197L25.943 31.7967C26.7374 31.9337 27.3462 31.1358 26.9639 30.4586L15.0275 9.31675C14.4959 8.37519 15.7971 7.47496 16.5732 8.24736L33.9997 25.5908C34.5579 26.1463 35.5429 25.8415 35.6516 25.0797L39.0447 1.29446Z"
+                  fill="#D5F3CF"
+                />
+              </svg>
+              <div class="audience__text">
+                <h3 class="audience__title">Студентам</h3>
+
+                <p class="audience__description">
+                  Сравнить зарплаты в разных сферах и прокачать самые денежные
+                  навыки
+                </p>
+              </div>
+            </div>
+
+            <div class="audience__card yellow-border">
+              <svg
+                class="audience__card-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 80 81"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.0472 20.5472L17.2555 20.9033C-5.75184 23.8384 -5.75185 57.1616 17.2555 60.0967L20.0472 60.4528L20.4033 63.2445C23.3384 86.2518 56.6616 86.2518 59.5967 63.2445L59.9528 60.4528L62.7445 60.0967C85.7519 57.1616 85.7519 23.8384 62.7445 20.9033L59.9528 20.5472L59.5967 17.7555C56.6616 -5.25184 23.3384 -5.25184 20.4033 17.7555L20.0472 20.5472Z"
+                  fill="#F7F399"
+                />
+              </svg>
+              <div class="audience__text">
+                <h4 class="audience__title">Специалистам</h4>
+
+                <p class="audience__description">
+                  Узнать свою рыночную цену и не продешевить на собеседовании
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="team__card frontend-1">
-          <div class="team__card-text">
-            <h6 class="team__role">Frontend-разработчик</h6>
-            <div class="team__name">name</div>
-          </div>
-        </div>
+          <div class="audience__line d-flex">
+            <div class="audience__card yellow-border">
+              <svg
+                class="audience__card-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 80 81"
+                fill="none"
+              >
+                <circle cx="40" cy="40.5" r="40" fill="#F7F399" />
+              </svg>
+              <div class="audience__text">
+                <h4 class="audience__title">HR-ам</h4>
+                <p class="audience__description">
+                  Быстро проверять, насколько предложение компании соответствует
+                  рынку
+                </p>
+              </div>
+            </div>
 
-        <div class="team__card frontend-2">
-          <div class="team__card-text">
-            <h6 class="team__role">Frontend-разработчик</h6>
-            <div class="team__name">name</div>
-          </div>
-        </div>
-
-        <div class="team__card project-manager">
-          <div class="team__card-text">
-            <h6 class="team__role">Project Manager</h6>
-            <div class="team__name">Клыков Георгий</div>
-          </div>
-        </div>
-
-        <div class="team__card data-analyst">
-          <div class="team__card-text">
-            <h6 class="team__role">Data Analyst</h6>
-            <div class="team__name">Курашин Максим</div>
-          </div>
-        </div>
-
-        <div class="team__card data-scientist">
-          <div class="team__card-text">
-            <h6 class="team__role">Data Scientist</h6>
-            <div class="team__name">Калинкин Алексей</div>
-          </div>
-        </div>
-
-        <div class="team__card ux-ui-designer">
-          <div class="team__card-text">
-            <h6 class="team__role">UX/UI-дизайнер</h6>
-            <div class="team__name">Смирнова Дарья</div>
-          </div>
-        </div>
-
-        <div class="team__card frontend-3">
-          <div class="team__card-text">
-            <h6 class="team__role">Frontend-разработчик</h6>
-            <div class="team__name">name</div>
-          </div>
-        </div>
-
-        <div class="team__card backend">
-          <div class="team__card-text">
-            <h6 class="team__role">Backend-разработчик</h6>
-            <div class="team__name">Муратов Егор</div>
-          </div>
-        </div>
-
-        <div class="team__card frontend-4">
-          <div class="team__card-text">
-            <h6 class="team__role">Frontend-разработчик</h6>
-            <div class="team__name">name</div>
+            <div class="audience__card pink-border">
+              <svg
+                class="audience__card-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 80 81"
+                fill="none"
+              >
+                <path
+                  d="M37.8075 2.43054C38.1359 -0.143514 41.8641 -0.143514 42.1925 2.43054L46.0351 32.5522C46.1625 33.551 46.949 34.3375 47.9478 34.4649L78.0695 38.3075C80.6435 38.6359 80.6435 42.3641 78.0695 42.6925L47.9478 46.5351C46.949 46.6625 46.1625 47.449 46.0351 48.4478L42.1925 78.5695C41.8641 81.1435 38.1359 81.1435 37.8075 78.5695L33.9649 48.4478C33.8375 47.449 33.051 46.6625 32.0522 46.5351L1.93054 42.6925C-0.643514 42.3641 -0.643514 38.6359 1.93054 38.3075L32.0522 34.4649C33.051 34.3375 33.8375 33.551 33.9649 32.5522L37.8075 2.43054Z"
+                  fill="#F8D6FA"
+                />
+              </svg>
+              <div class="audience__text">
+                <h4 class="audience__title">Всем желающим</h4>
+                <p class="audience__description">
+                  Принимать карьерные решения не по слухам, а по цифрам
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="company container">
-        <div class="company__title">
-          <h2 class="company__section-tag">[04] О компании</h2>
-          <p class="company__credit">
-            Этот проект стал возможным только благодаря
-            <a href="https://lad-academy.ru/main" class="company__link-accent">
-              IT-академии Lad</a
-            >
-            — места, где обучают IT с нуля и пошагово доводят до
-            трудоустройства.
-          </p>
+      <section class="info" id="info">
+        <div class="container">
+          <div class="info__wrapper">
+            <h2 class="info__section-tag">[01] О проекте</h2>
+
+            <div class="info__content">
+              <p class="info__text">
+                Мы обучили модели на
+                <span class="info__text-accent">тысячах вакансий</span>, чтобы
+                вы могли получить точный расчёт за несколько секунд.
+              </p>
+              <p class="info__text-small">
+                Сервис анализирует актуальные данные по рынку труда и помогает:
+              </p>
+              <div class="info__help-card-group">
+                <div class="info__help-card help-card-column background-pink">
+                  <div class="info__number-circle circle-column">1</div>
+                  <p class="info__help-card-text">
+                    Понять, как навыки и технологии влияют на оплату труда
+                  </p>
+                </div>
+                <div class="info__help-card-rows">
+                  <div class="info__help-card help-card-row background-green">
+                    <div class="info__number-circle">2</div>
+                    <p class="info__help-card-text">
+                      Сравнить доходы по городам и уровням опыта
+                    </p>
+                  </div>
+                  <div class="info__help-card help-card-row background-yellow">
+                    <div class="info__number-circle">3</div>
+                    <p class="info__help-card-text">
+                      Узнать медианные зарплаты для вашей специализации
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="company__text">
-          <a href="https://lad-academy.ru/main" class="company__logo">
-            <picture>
-              <!-- Для экранов меньше 1700px -->
-              <source
-                srcset="src/images/lad-academy-logo-big.png"
-                media="(max-width: 1699px)"
-              />
-              <!-- Для экранов 1700px и больше -->
-              <img
-                src="src/images/lad-academy-logo.png"
-                alt="Логотип lad-academy"
-              />
-            </picture>
-          </a>
-          <p class="company__description">
-            Академия не просто обучает, а даёт студентам возможность работать с
-            реальными коммерческими задачами. Наш калькулятор зарплат — один из
-            таких проектов, где будущие IT-специалисты смогли применить свои
-            знания на практике.
-          </p>
+      </section>
+
+      <section class="how-it-works">
+        <div class="container">
+          <div class="how-it-works__wrapper">
+            <div class="how-it-works__description">
+              <p class="how-it-works__text">
+                Чтобы получить актуальные данные по вашему профилю, достаточно
+                заполнить &nbsp;
+                <span class="how-it-works__accent">5 пунктов</span>:
+              </p>
+              <h2 class="how-it-works__section-tag">Как это работает?</h2>
+            </div>
+
+            <ul class="how-it-works__step-list">
+              <li class="how-it-works__step">
+                <span class="how-it-works__step-number">1</span>
+                <div class="how-it-works__step-content">
+                  <p class="how-it-works__step-title">Специальность</p>
+                  <p class="how-it-works__step-description">
+                    Ваша профессия или должность
+                  </p>
+                </div>
+              </li>
+              <li class="how-it-works__step">
+                <span class="how-it-works__step-number">2</span>
+                <div class="how-it-works__step-content">
+                  <p class="how-it-works__step-title">Опыт работы</p>
+                  <p class="how-it-works__step-description">От 0 до 6 и выше</p>
+                </div>
+              </li>
+              <li class="how-it-works__step">
+                <span class="how-it-works__step-number">3</span>
+                <div class="how-it-works__step-content">
+                  <p class="how-it-works__step-title">Город</p>
+                  <p class="how-it-works__step-description">
+                    Зарплаты сильно зависят от локации
+                  </p>
+                </div>
+              </li>
+              <li class="how-it-works__step">
+                <span class="how-it-works__step-number">4</span>
+                <div class="how-it-works__step-content">
+                  <p class="how-it-works__step-title">Тип занятости</p>
+                  <p class="how-it-works__step-description">
+                    Гибкий график, полный день, удалённая работа
+                  </p>
+                </div>
+              </li>
+              <li class="how-it-works__step">
+                <span class="how-it-works__step-number">5</span>
+                <div class="how-it-works__step-content">
+                  <p class="how-it-works__step-title">Навыки</p>
+                  <p class="how-it-works__step-description">
+                    Чем больше навыков — тем точнее расчёт
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="how-it-works__result-title">
+              После заполнения всех полей вы получите данные:
+            </div>
+
+            <div class="how-it-works__cards">
+              <div class="how-it-works__card">
+                <div class="how-it-works__card-text">
+                  <p class="how-it-works__card-title">Минимальная зарплата</p>
+                  <p class="how-it-works__card-description">
+                    Нижняя граница по вашим параметрам
+                  </p>
+                </div>
+                <div class="how-it-works__value-box">
+                  <span class="how-it-works__value">77 145</span>
+                  <span class="how-it-works__currency">руб.</span>
+                </div>
+              </div>
+              <div class="how-it-works__card">
+                <div class="how-it-works__card-text">
+                  <p class="how-it-works__card-title">Максимальная зарплата</p>
+                  <p class="how-it-works__card-description">
+                    Топовые предложения в вашей нише
+                  </p>
+                </div>
+                <div class="how-it-works__value-box">
+                  <span class="how-it-works__value">103 115</span>
+                  <span class="how-it-works__currency">руб.</span>
+                </div>
+              </div>
+              <div class="how-it-works__card">
+                <div class="how-it-works__card-text">
+                  <p class="how-it-works__card-title">Средняя зарплата</p>
+                  <p class="how-it-works__card-description">
+                    Рыночный стандарт для вашего опыта
+                  </p>
+                </div>
+                <div class="how-it-works__value-box">
+                  <span class="how-it-works__value">91 857</span>
+                  <span class="how-it-works__currency">руб.</span>
+                </div>
+              </div>
+              <div class="how-it-works__card">
+                <div class="how-it-works__card-text">
+                  <p class="how-it-works__card-title">Медианная зарплата</p>
+                  <p class="how-it-works__card-description">
+                    «Золотая середина» без крайних значений
+                  </p>
+                </div>
+                <div class="how-it-works__value-box">
+                  <span class="how-it-works__value">83 584</span>
+                  <span class="how-it-works__currency">руб.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator" id="calculator">
+        <div class="container">
+          <div class="calculator__wrapper">
+            <div class="calculator__header">
+              <h2 class="calculator__title">Salary Calculator</h2>
+              <p class="calculator__text">
+                Узнайте диапазон зарплат для вашей специальности, <br />
+                учитывая навыки, опыт и место работы
+              </p>
+            </div>
+
+            <div class="calculator__body">
+              <div class="calculator__input">
+                <h3 class="calculator__subtitle">Ввод данных</h3>
+                <form action="" class="calculator__form">
+                  <!-- Специальность -->
+                  <div class="calculator__vacancy">
+                    <label for="vacancy" class="calculator__label"
+                      >Специальность</label
+                    >
+                    <div
+                      class="calculator__input-wrapper calculator__input--wrapper"
+                    >
+                      <input
+                        id="vacancy"
+                        class="calculator__input"
+                        placeholder=""
+                        autocomplete="off"
+                      />
+                      <button
+                        type="button"
+                        class="calculator__arrow-button"
+                        id="open-dropdown"
+                      >
+                        <img
+                          src="src/images/arrow-down.svg"
+                          alt="Arrow Down"
+                          class="calculator__arrow-img"
+                        />
+                      </button>
+                      <div
+                        id="vacancy-dropdown"
+                        class="calculator__dropdown"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <!-- Город -->
+                  <div class="calculator__city">
+                    <label for="city" class="calculator__label">Город</label>
+                    <div
+                      class="calculator__input-wrapper calculator__input--wrapper"
+                    >
+                      <input
+                        id="city"
+                        class="calculator__input"
+                        placeholder=""
+                        autocomplete="off"
+                      />
+                      <button
+                        type="button"
+                        class="calculator__arrow-button"
+                        id="open-dropdown-city"
+                      >
+                        <img
+                          src="src/images/arrow-down.svg"
+                          alt="Arrow Down"
+                          class="calculator__arrow-img"
+                        />
+                      </button>
+                      <div
+                        id="city-dropdown"
+                        class="calculator__dropdown"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <!-- Опыт работы -->
+                  <div class="calculator__experience">
+                    <label for="experience" class="calculator__label"
+                      >Опыт работы</label
+                    >
+                    <div
+                      class="calculator__input-wrapper calculator__input--wrapper"
+                    >
+                      <input
+                        id="experience"
+                        class="calculator__input"
+                        placeholder=""
+                        autocomplete="off"
+                      />
+                      <button
+                        type="button"
+                        class="calculator__arrow-button"
+                        id="open-dropdown-experience"
+                      >
+                        <img
+                          src="src/images/arrow-down.svg"
+                          alt="Arrow Down"
+                          class="calculator__arrow-img"
+                        />
+                      </button>
+                      <div
+                        id="experience-dropdown"
+                        class="calculator__dropdown"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <!-- Тип занятости -->
+                  <div class="calculator__schedule">
+                    <label for="schedule" class="calculator__label"
+                      >Тип занятости</label
+                    >
+                    <div
+                      class="calculator__input-wrapper calculator__input--wrapper"
+                    >
+                      <input
+                        id="schedule"
+                        class="calculator__input"
+                        placeholder=""
+                        autocomplete="off"
+                      />
+                      <button type="button" class="calculator__arrow-button">
+                        <img
+                          src="src/images/arrow-down.svg"
+                          alt="Arrow Down"
+                          class="calculator__arrow-img"
+                        />
+                      </button>
+                      <div class="calculator__dropdown"></div>
+                    </div>
+                  </div>
+
+                  <!-- Навыки -->
+                  <div class="calculator__skills">
+                    <div class="calculator__label-wrapper">
+                      <label for="skills" class="calculator__label"
+                        >Навыки</label
+                      >
+                      <button type="button" class="calculator__clear-button">
+                        Очистить
+                      </button>
+                    </div>
+                    <div
+                      class="calculator__input-wrapper calculator__input--wrapper"
+                    >
+                      <input
+                        id="skills"
+                        class="calculator__input"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Результаты вычислений -->
+              <div class="calculator__result">
+                <h3 class="calculator__subtitle">Результаты вычислений</h3>
+                <div class="calculator__result-wrapper">
+                  <!-- Диапазон зарплаты -->
+                  <div class="calculator__salary-range">
+                    <h4 class="calculator__salary-range-title result-subtitle">
+                      Диапазон зарплаты (от и до)
+                    </h4>
+                    <div class="calculator__salary-range-values">
+                      <div class="calculator__salary-range-box output-box">
+                        <span class="calculator__salary-from">xx xxx</span>
+                        <span class="calculator__currency">руб.</span>
+                      </div>
+                      <span class="calculator__salary-separator"></span>
+                      <div class="calculator__salary-range-box output-box">
+                        <span class="calculator__salary-to">xx xxx</span>
+                        <span class="calculator__currency">руб.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Средняя зарплата -->
+                  <div class="calculator__avg-salary">
+                    <h4 class="calculator__avg-salary-title result-subtitle">
+                      Средняя зарплата
+                    </h4>
+                    <div class="calculator__avg-salary-box output-box">
+                      <span class="calculator__avg-salary-output">xx xxx</span>
+                      <span class="calculator__currency">руб.</span>
+                    </div>
+                  </div>
+
+                  <!-- Медианная зарплата -->
+                  <div class="calculator__median-salary">
+                    <h4 class="calculator__median-salary-title result-subtitle">
+                      Медианная зарплата
+                    </h4>
+                    <div class="calculator__median-salary-box output-box">
+                      <span class="calculator__median-salary-output"
+                        >xx xxx</span
+                      >
+                      <span class="calculator__currency">руб.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Предупреждение -->
+                <div class="calculator__form-warning">
+                  <img
+                    class="calculator__warning-icon"
+                    src="src/images/exclmark.svg"
+                    alt="exclamation mark"
+                  />
+                  <span class="calculator__warning-text"
+                    >Выберите все параметры</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="container">
+          <div class="team__wrapper">
+            <div class="team__header">
+              <h2 class="team__section-tag">[03] Команда проекта</h2>
+              <p class="team__text">
+                Над калькулятором работали студенты <br />
+                НИУ ВШЭ и IT-академия Lad
+              </p>
+            </div>
+
+            <div class="team__card system-alanyst">
+              <div class="team__card-text">
+                <h6 class="team__role">System Analyst</h6>
+                <div class="team__name">Спаращуков Кирилл</div>
+              </div>
+            </div>
+
+            <div class="team__card frontend-1">
+              <div class="team__card-text">
+                <h6 class="team__role">Frontend-разработчик</h6>
+                <div class="team__name">Игнатьева Виктория</div>
+              </div>
+            </div>
+
+            <div class="team__card frontend-2">
+              <div class="team__card-text">
+                <h6 class="team__role">Frontend-разработчик</h6>
+                <div class="team__name">name</div>
+              </div>
+            </div>
+
+            <div class="team__card project-manager">
+              <div class="team__card-text">
+                <h6 class="team__role">Project Manager</h6>
+                <div class="team__name">Клыков Георгий</div>
+              </div>
+            </div>
+
+            <div class="team__card data-analyst">
+              <div class="team__card-text">
+                <h6 class="team__role">Data Analyst</h6>
+                <div class="team__name">Курашин Максим</div>
+              </div>
+            </div>
+
+            <div class="team__card data-scientist">
+              <div class="team__card-text">
+                <h6 class="team__role">Data Scientist</h6>
+                <div class="team__name">Калинкин Алексей</div>
+              </div>
+            </div>
+
+            <div class="team__card ux-ui-designer">
+              <div class="team__card-text">
+                <h6 class="team__role">UX/UI-дизайнер</h6>
+                <div class="team__name">Смирнова Дарья</div>
+              </div>
+            </div>
+
+            <div class="team__card frontend-3">
+              <div class="team__card-text">
+                <h6 class="team__role">Frontend-разработчик</h6>
+                <div class="team__name">Красников Илья</div>
+              </div>
+            </div>
+
+            <div class="team__card backend">
+              <div class="team__card-text">
+                <h6 class="team__role">Backend-разработчик</h6>
+                <div class="team__name">Муратов Егор</div>
+              </div>
+            </div>
+
+            <div class="team__card frontend-4">
+              <div class="team__card-text">
+                <h6 class="team__role">Frontend-разработчик</h6>
+                <div class="team__name">Кальянов Никита</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="company" id="company">
+        <div class="container">
+          <div class="company__wrapper">
+            <div class="company__title">
+              <h2 class="company__section-tag">[04] О компании</h2>
+              <p class="company__credit">
+                Этот проект стал возможным только благодаря
+                <a
+                  href="https://lad-academy.ru/main"
+                  class="company__link-accent"
+                >
+                  IT-академии Lad</a
+                >
+                — места, где обучают IT с нуля и пошагово доводят до
+                трудоустройства.
+              </p>
+            </div>
+            <div class="company__text">
+              <a href="https://lad-academy.ru/main" class="company__logo">
+                <picture>
+                  <!-- Для экранов меньше 1700px -->
+                  <source
+                    srcset="src/images/lad-academy-logo-big.png"
+                    media="(max-width: 1699px)"
+                  />
+                  <!-- Для экранов 1700px и больше -->
+                  <img
+                    src="src/images/lad-academy-logo.png"
+                    alt="Логотип lad-academy"
+                  />
+                </picture>
+              </a>
+              <p class="company__description">
+                Академия не просто обучает, а даёт студентам возможность
+                работать с реальными коммерческими задачами. Наш калькулятор
+                зарплат — один из таких проектов, где будущие IT-специалисты
+                смогли применить свои знания на практике.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <nav class="footer__menu">
-        <ul class="footer__menu-list">
-          <li class="footer__menu-item">
-            <a href="" class="footer__menu-link">О проекте</a>
-          </li>
-          <li class="footer__menu-item">
-            <a href="#calculator" class="footer__menu-link">Калькулятор</a>
-          </li>
-          <li class="footer__menu-item">
-            <a href="#team" class="footer__menu-link">Команда</a>
-          </li>
-          <li class="footer__menu-item">
-            <a href="#company" class="footer__menu-link">О компании</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer__title">Salary Calculator</div>
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">О проекте</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#calculator" class="footer__menu-link">Калькулятор</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#team" class="footer__menu-link">Команда</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#company" class="footer__menu-link">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__title">Salary Calculator</div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
