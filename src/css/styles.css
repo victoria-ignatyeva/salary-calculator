@@ -806,10 +806,11 @@ input {
   line-height: 38px;
   white-space: nowrap;
   line-height: 1.18;
+  flex-grow: 1;
 }
 
 .calculator__salary-separator {
-  width: 63px;
+  width: 72px;
   height: 10px;
   background-color: var(--white);
 }
@@ -1419,6 +1420,10 @@ input {
   }
   .how-it-works__card-description {
     font-size: 12px;
+  }
+
+  .output-box {
+    width: 100%;
   }
   .how-it-works__value-box {
     font-size: 28px;
